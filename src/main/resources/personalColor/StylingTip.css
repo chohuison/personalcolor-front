@@ -1,0 +1,15 @@
+#hair_tip{
+    -fx-background-image: url("../../../../img/Styling_tip-img/icon-hair.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-size: 30;
+}
+
+#fashion_tip{
+    -fx-background-image: url("../../../../img/Styling_tip-img/icon-fashionTip.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-size: 30;
+}

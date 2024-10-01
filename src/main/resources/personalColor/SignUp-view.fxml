@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="800.0" maxWidth="450.0" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.SignUpController">
+    <children>
+        <BorderPane layoutX="6.0" layoutY="6.0" prefHeight="787.0" prefWidth="438.0">
+            <bottom>
+                <BorderPane prefHeight="124.0" prefWidth="436.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #786F82; -fx-border-style: solid;" BorderPane.alignment="CENTER">
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="139.0" layoutY="22.0" text="Do you have an account?">
+                                    <font>
+                                        <Font name="Arial" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="login_btn" layoutX="154.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonLogin" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #A192B8;" text="LOGIN" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="16.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                    <BorderPane.margin>
+                        <Insets bottom="30.0" />
+                    </BorderPane.margin></BorderPane>
+            </bottom>
+            <top>
+                <BorderPane prefHeight="133.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                    <right>
+                        <AnchorPane prefHeight="68.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="30.0" layoutY="41.0" text="What's your color" textFill="#4e4557">
+                                    <font>
+                                        <Font name="Arial Bold" size="45.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="27.0" layoutY="39.0" text="What's your color" textAlignment="CENTER" textFill="#786f82">
+                                    <font>
+                                        <Font name="Arial Bold" size="45.0" />
+                                    </font>
+                                </Label>
+                            </children></AnchorPane>
+                    </right></BorderPane>
+            </top>
+            <center>
+                <BorderPane prefHeight="530.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #786F82;" BorderPane.alignment="CENTER">
+                            <children>
+                                <TextField fx:id="nameField" layoutX="89.0" layoutY="40.0" prefHeight="40.0" prefWidth="260.0" promptText="Name">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="idField" layoutX="89.0" layoutY="92.0" prefHeight="40.0" prefWidth="260.0" promptText="ID">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="pwField" layoutX="89.0" layoutY="141.0" prefHeight="40.0" prefWidth="260.0" promptText="Password">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </PasswordField>
+                                <ComboBox fx:id="ageBox" layoutX="89.0" layoutY="224.0" prefHeight="30.0" prefWidth="260.0" promptText="Age" style="-fx-background-color: #CFC4E0;" />
+                                <ComboBox fx:id="personalColorBox" layoutX="89.0" layoutY="344.0" prefHeight="30.0" prefWidth="260.0" promptText="Personal Color" style="-fx-background-color: #CFC4E0;" />
+                                <Button fx:id="sign_btn" layoutX="89.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleButtonSignUp" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #7C9181;" text="SIGN UP" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="16.0" />
+                                    </font></Button>
+                                <Label layoutX="89.0" layoutY="203.0" text="Age">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="90.0" layoutY="263.0" text="Gender">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="89.0" layoutY="322.0" text="Personal Color">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Label>
+                        <ComboBox fx:id="genderBox" layoutX="89.0" layoutY="284.0" prefHeight="30.0" prefWidth="260.0" promptText="Gender" style="-fx-background-color: #CFC4E0;" />
+                        <Button layoutX="329.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleButtonQuestionMark" prefHeight="17.0" prefWidth="0.0" text="?">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </center></BorderPane>
+    </children>
+</AnchorPane>

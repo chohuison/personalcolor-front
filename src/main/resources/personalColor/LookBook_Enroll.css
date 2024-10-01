@@ -1,0 +1,26 @@
+#back_btn
+{
+    -fx-background-image: url("../../../../img/look_book_enroll-icon/back-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 34;
+    -fx-background-color:  #DEDAE3;
+}
+
+#addImage
+{
+    -fx-background-image: url("../../../../img/look_book_enroll-icon/image_plus-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 34;
+    -fx-background-color:  none;
+}
+
+#check_btn
+{
+    -fx-background-image: url("../../../../img/look_book_enroll-icon/check-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 35;
+    -fx-background-color:  none;
+}

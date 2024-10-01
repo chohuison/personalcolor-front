@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #dedae3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.CosmeticsController">
+   <children>
+      <BorderPane layoutX="7.0" prefHeight="800.0" prefWidth="436.0">
+         <top>
+            <AnchorPane prefHeight="91.0" prefWidth="436.0" style="-fx-background-color: #DEDAE3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="35.0" layoutY="30.0" text="Cosmetics Recommandation" textFill="#4e4557">
+                     <font>
+                        <Font name="Arial Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="29.0" text="Cosmetics Recommandation" textFill="#786f82">
+                     <font>
+                        <Font name="Arial Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back_btn" layoutX="-8.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="43.0" prefWidth="31.0" style="-fx-background-color: none;" text="&lt;" textFill="#786f82">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="134.0" prefWidth="436.0" style="-fx-border-color: #786F82; -fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="lip" layoutX="50.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonLip" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 50%; -fx-background-color: #DEDAE3;" />
+                  <Button fx:id="shadow" layoutX="183.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonShadow" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 50%; -fx-background-color: #DEDAE3;" />
+                  <Button fx:id="blusher" layoutX="315.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonBlusher" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 50%; -fx-background-color: #DEDAE3;" />
+                  <Text layoutX="66.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lip stick">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="186.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="eye shadow">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="331.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="blusher">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin></AnchorPane>
+         </center>
+         <bottom>
+            <ScrollPane prefHeight="561.0" prefWidth="436.0" style="-fx-background-color: #ffffff; -fx-border-color: #786F82;" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane prefHeight="561.0" prefWidth="418.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <VBox fx:id="libBox" layoutX="42.0" layoutY="21.0" prefHeight="100.0" prefWidth="334.0"> </VBox>
+                        <VBox fx:id="blusherBox" layoutX="42.0" layoutY="21.0" prefHeight="100.0" prefWidth="334.0"> </VBox>
+                        <VBox fx:id="shadowBox" layoutX="42.0" layoutY="21.0" prefHeight="100.0" prefWidth="334.0"> </VBox>
+                     </children></AnchorPane>
+               </content>
+               <BorderPane.margin>
+                  <Insets bottom="30.0" top="10.0" />
+               </BorderPane.margin>
+            </ScrollPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="2560.0" maxWidth="1440.0" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.AccessoryController">
+    <children>
+        <BorderPane layoutX="6.0" layoutY="6.0" prefHeight="787.0" prefWidth="438.0">
+            <center>
+                <ScrollPane prefHeight="689.0" prefWidth="438.0" style="-fx-background-color: #FFFFFF; -fx-border-style: solid; -fx-border-color: #786F82;" BorderPane.alignment="CENTER">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="423.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <VBox fx:id="vbox" layoutX="61.0" layoutY="45.0" prefHeight="200.0" prefWidth="334.0">
+                        </VBox>
+                     </children></AnchorPane>
+                    </content>
+                </ScrollPane>
+            </center>
+            <top>
+                <AnchorPane prefHeight="138.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="99.0" layoutY="7.0" text="Accessory" textFill="#4e4557">
+                            <font>
+                                <Font name="Arial Bold" size="48.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="96.0" layoutY="5.0" text="Accessory" textFill="#786f82">
+                            <font>
+                                <Font name="Arial Bold" size="48.0" />
+                            </font></Label>
+                        <AnchorPane layoutY="86.0" prefHeight="65.0" prefWidth="438.0" style="-fx-background-color: #FFFFFF; -fx-border-style: solid; -fx-border-color: #786F82;" AnchorPane.bottomAnchor="5.0">
+                            <children>
+                                <Text fx:id="season" fill="#a192b8" layoutX="1.0" layoutY="41.0" style="-fx-text-alignment: center" text="Spring Warm" textAlignment="CENTER" wrappingWidth="438.0">
+                                    <font>
+                                        <Font name="Arial Bold" size="24.0" />
+                                    </font></Text>
+                            </children></AnchorPane>
+                  <Button fx:id="back_btn" layoutX="-5.0" layoutY="-3.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: #DEDAE3;" text="&lt;" textFill="#786f82">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+            </top></BorderPane>
+    </children>
+</AnchorPane>

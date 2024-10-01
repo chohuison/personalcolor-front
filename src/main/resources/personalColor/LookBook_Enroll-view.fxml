@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.LookBookEnrollController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="450.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="back_btn" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="34.0" prefWidth="34.0" />
+                  <Button fx:id="addImage" layoutX="402.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonFileChoose" prefHeight="34.0" prefWidth="34.0" />
+                  <Button fx:id="check_btn" layoutX="54.0" layoutY="13.0" mnemonicParsing="false" onAction="#check" prefHeight="34.0" prefWidth="34.0" />
+               </children></AnchorPane>
+         </top>
+         <bottom>
+            <ScrollPane prefHeight="211.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <content>
+                  <TextFlow prefHeight="288.0" prefWidth="432.0">
+                     <children>
+                        <TextArea fx:id="enrollText" prefHeight="199.0" prefWidth="432.0" />
+                     </children></TextFlow>
+               </content>
+            </ScrollPane>
+         </bottom>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <AnchorPane prefHeight="450.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+                     <ImageView fx:id="imgView" fitHeight="450.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="false" />
+                     <ComboBox fx:id="scope" layoutX="8.0" layoutY="456.0" prefWidth="150.0" promptText="공개 범위" style="-fx-background-color: #DEDAE3;" />
+                  </AnchorPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="45.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="user_id" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="434.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

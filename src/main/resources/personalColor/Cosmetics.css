@@ -1,0 +1,20 @@
+#lip {
+    -fx-background-image: url("../../../../img/cosmetics_recommand-icon/icon-lipstick.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 50;
+}
+
+#shadow {
+    -fx-background-image: url("../../../../img/cosmetics_recommand-icon/icon-eye_shadow.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 50;
+}
+
+#blusher {
+    -fx-background-image: url("../../../../img/cosmetics_recommand-icon/icon-blusher.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 50;
+}

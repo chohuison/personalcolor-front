@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.StylingTipContentController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="450.0">
+         <top>
+            <AnchorPane prefHeight="102.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" BorderPane.alignment="CENTER">
+               <Label layoutX="112.0" layoutY="26.0" text="Styling Tip" textFill="#4e4557">
+                  <font>
+                     <Font name="Arial Bold" size="45.0" />
+                  </font>
+               </Label>
+               <Label layoutX="109.0" layoutY="24.0" text="Styling Tip" textAlignment="CENTER" textFill="#786f82">
+                  <font>
+                     <Font name="Arial Bold" size="45.0" />
+                  </font>
+               </Label>
+               <Button fx:id="back_btn" layoutX="13.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="22.0" prefWidth="49.0" style="-fx-background-color: none;" text="&lt;" textFill="#786f82">
+                  <font>
+                     <Font name="Arial Bold" size="24.0" />
+                  </font></Button>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="450.0" fitWidth="450.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../img/Styling_tip-img/img_StylingTip_Content.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="fashion_btn" layoutX="120.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleButtonFashion" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 50%; -fx-border-radius: 50%; -fx-background-color: #fff; -fx-border-color: #786f82;">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../img/Styling_tip-img/icon-fashionTip.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="hair_btn" layoutX="250.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleButtonHair" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 50%; -fx-border-radius: 50%; -fx-background-color: #fff; -fx-border-color: #786f82;">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../img/Styling_tip-img/icon-hair.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="186.0" layoutY="511.0" text="Another?">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="95.0" layoutX="82.0" layoutY="522.0" startX="-30.0" />
+                  <Line endX="20.0" layoutX="374.0" layoutY="523.0" startX="-100.0" />
+                  <Text fx:id="title" layoutX="57.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cosmetic" textAlignment="CENTER" wrappingWidth="140.109375">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="text" layoutX="238.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="퍼스널컬러도 좋지만, 대비감도 중요해요!" textAlignment="CENTER" wrappingWidth="184.109375">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Check this book!&quot;" textAlignment="CENTER" wrappingWidth="406.109375">
+                     <font>
+                        <Font name="Arial Bold Italic" size="24.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="52.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" BorderPane.alignment="CENTER" />
+         </bottom></BorderPane>
+   </children>
+</AnchorPane>

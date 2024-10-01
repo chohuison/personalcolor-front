@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.StylingTipController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="450.0">
+         <top>
+            <AnchorPane prefHeight="101.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <Label layoutX="112.0" layoutY="26.0" text="Styling Tip" textFill="#4e4557">
+                  <font>
+                     <Font name="Arial Bold" size="45.0" />
+                  </font>
+               </Label>
+               <Label layoutX="109.0" layoutY="24.0" text="Styling Tip" textAlignment="CENTER" textFill="#786f82">
+                  <font>
+                     <Font name="Arial Bold" size="45.0" />
+                  </font>
+               </Label>
+               <Button fx:id="back_btn" layoutX="13.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="22.0" prefWidth="49.0" style="-fx-background-color: none;" text="&lt;" textFill="#786f82">
+                  <font>
+                     <Font name="Arial Bold" size="24.0" />
+                  </font></Button>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="653.0" prefWidth="450.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="511.0" fitWidth="423.0" layoutX="26.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../img/Styling_tip-img/img_StylingTip.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="hair_tip" layoutX="395.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleButtonHair" prefHeight="35.0" prefWidth="30.0" />
+                  <Button fx:id="fashion_tip" layoutX="402.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleButtonFashion" prefHeight="35.0" prefWidth="30.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="124.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="12.0" layoutY="11.0" prefHeight="100.0" prefWidth="426.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text layoutX="41.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="책의 인덱스를 누르시면 해당 인덱스에 해당하는 스타일링 팁을 보여드립니다." textAlignment="CENTER" wrappingWidth="343.109375">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </bottom></BorderPane>
+   </children>
+</AnchorPane>

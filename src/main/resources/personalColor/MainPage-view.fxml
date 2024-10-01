@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="2560.0" maxWidth="1440.0" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.MainPageController">
+    <children>
+        <BorderPane prefHeight="800.0" prefWidth="450.0">
+            <top>
+                <AnchorPane prefHeight="103.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="35.0" layoutY="32.0" prefWidth="303.0" text="What's your color" textFill="#4e4557">
+                            <font>
+                                <Font name="Arial Bold" size="36.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="30.0" text="What's your color" textFill="#786f82">
+                            <font>
+                                <Font name="Arial Bold" size="36.0" />
+                            </font>
+                        </Label>
+                  <Button fx:id="myPage" layoutX="348.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleButtonMyPage" prefHeight="73.0" prefWidth="88.0" style="-fx-background-color: #DEDAE3;" text="My" textFill="#786f82">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font></Button>
+                    </children></AnchorPane>
+            </top>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="userName" layoutX="26.0" layoutY="37.0" text="User Name">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="personalColorBox" layoutX="252.0" layoutY="36.0" prefHeight="29.0" prefWidth="173.0" style="-fx-background-color: #CFC4E0;" />
+                        <Button fx:id="color_btn" layoutX="26.0" layoutY="94.0" mnemonicParsing="false" onAction="#handleButtonColor" prefHeight="185.0" prefWidth="185.0" style="-fx-background-color: #D8E8f8;">
+                            <graphic>
+                                <ImageView fx:id="color" fitHeight="131.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../img/main_page-icon/icon-palette.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="cosmetic_btn" layoutX="240.0" layoutY="94.0" mnemonicParsing="false" onAction="#handleButtonCosmetics" prefHeight="185.0" prefWidth="185.0" style="-fx-background-color: #D8E8f8;">
+                            <graphic>
+                                <ImageView fx:id="cosmetic" fitHeight="141.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../img/main_page-icon/icon-cosmetic.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="stylingTip_btn" layoutX="26.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleButtonStyling" prefHeight="185.0" prefWidth="185.0" style="-fx-background-color: #D8E8f8;">
+                            <graphic>
+                                <ImageView fx:id="stylingTip" fitHeight="135.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../img/main_page-icon/icon-styling.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="accessory_btn" layoutX="240.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleButtonAccessory" prefHeight="185.0" prefWidth="185.0" style="-fx-background-color: #D8E8f8;">
+                            <graphic>
+                                <ImageView fx:id="accessory" fitHeight="127.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../img/main_page-icon/icon-accessory.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                        <Button fx:id="lookBook_btn" layoutX="26.0" layoutY="521.0" mnemonicParsing="false" onAction="#handleButtonLookBook" prefHeight="86.0" prefWidth="400.0" style="-fx-background-color: #CFC4E0;" text="Share LookBook">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font></Button>
+                        <Label layoutX="100.0" layoutY="255.0" text="Color">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font></Label>
+                        <Label layoutX="301.0" layoutY="255.0" text="Cosmetic">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="83.0" layoutY="472.0" text="Styling Tip">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="297.0" layoutY="472.0" text="Accessory">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font></Label>
+                    </children>
+                </AnchorPane>
+            </center></BorderPane>
+    </children>
+</AnchorPane>
