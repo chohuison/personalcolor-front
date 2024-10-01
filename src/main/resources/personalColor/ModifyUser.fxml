@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="800.0" maxWidth="450.0" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #DEDAE3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.ModifyUserController">
+    <children>
+        <BorderPane layoutX="6.0" layoutY="6.0" prefHeight="787.0" prefWidth="438.0">
+            <top>
+                <BorderPane prefHeight="89.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                    <right>
+                        <AnchorPane prefHeight="68.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="90.0" layoutY="21.0" text="Modify User" textFill="#4e4557">
+                                    <font>
+                                        <Font name="Arial Bold" size="45.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="87.0" layoutY="19.0" text="Modify User" textAlignment="CENTER" textFill="#786f82">
+                                    <font>
+                                        <Font name="Arial Bold" size="45.0" />
+                                    </font>
+                                </Label>
+                        <Button fx:id="back_btn" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: #DEDAE3;" text="&lt;" textFill="#786f82">
+                            <font>
+                                <Font name="Arial Bold" size="36.0" />
+                            </font>
+                        </Button>
+                            </children></AnchorPane>
+
+                    </right></BorderPane>
+            </top>
+            <center>
+                <BorderPane prefHeight="530.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="438.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #786F82;" BorderPane.alignment="CENTER">
+                            <children>
+                                <TextField fx:id="nameField" layoutX="89.0" layoutY="118.0" prefHeight="40.0" prefWidth="260.0" promptText="Name">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="idField" layoutX="89.0" layoutY="170.0" prefHeight="40.0" prefWidth="260.0" promptText="ID">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="pwField" layoutX="89.0" layoutY="219.0" prefHeight="40.0" prefWidth="260.0" promptText="Password">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </PasswordField>
+                                <ComboBox fx:id="ageBox" layoutX="89.0" layoutY="302.0" prefHeight="30.0" prefWidth="260.0" promptText="Age" style="-fx-background-color: #CFC4E0;" />
+                                <ComboBox fx:id="personalColorBox" layoutX="89.0" layoutY="422.0" prefHeight="30.0" prefWidth="260.0" promptText="Personal Color" style="-fx-background-color: #CFC4E0;" />
+                                <Button fx:id="modify_btn" layoutX="89.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleButtonModifyInfo" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #7C9181;" text="Modify" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="16.0" />
+                                    </font></Button>
+                                <Label layoutX="89.0" layoutY="281.0" text="Age">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="90.0" layoutY="341.0" text="Gender">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="89.0" layoutY="400.0" text="Personal Color">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Label>
+                        <ComboBox fx:id="genderBox" layoutX="89.0" layoutY="362.0" prefHeight="30.0" prefWidth="260.0" promptText="Gender" style="-fx-background-color: #CFC4E0;" />
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </center></BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth=" 450.0" style="-fx-background-color: #dedae3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personalColor.controller.LookBookController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="450.0">
+         <top>
+            <AnchorPane prefHeight="53.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="13.0" text="LOOK BOOK" textFill="#4e4557">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="12.0" text="LOOK BOOK" textFill="#786f82">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="enroll_btn" layoutX="410.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonEnroll" prefHeight="20.0" prefWidth="20.0" />
+                  <Button fx:id="home_btn" layoutX="380.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonHome" prefHeight="20.0" prefWidth="20.0" />
+               </children></AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="114.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="spring" layoutX="40.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonSpring" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 50%; -fx-border-radius: 50%;" />
+                  <Button fx:id="summer" layoutX="145.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonSummer" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 50%; -fx-border-radius: 50%;" />
+                  <Button fx:id="autumn" layoutX="250.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonAutumn" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 50%; -fx-border-radius: 50%;" />
+                  <Button fx:id="winter" layoutX="351.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonWinter" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 50%; -fx-border-radius: 50%;" />
+                  <Text layoutX="54.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="spring">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="153.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="summer">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="260.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="autumn">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="365.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="winter">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="information" layoutX="107.0" layoutY="111.0" stylesheets="@LookBook.css" text="원하는 계절을 선택해주세요(중복 선택 가능)">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Label>
+               </children></AnchorPane>
+         </center>
+         <bottom>
+            <ScrollPane prefHeight="608.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane fx:id="ap" minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="435.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <VBox fx:id="vbox" layoutX="15.0" layoutY="45.0" prefHeight="200.0" prefWidth="400.0">
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

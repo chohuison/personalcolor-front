@@ -1,0 +1,71 @@
+#spring {
+    -fx-background-image: url("../../../../img/look_book-icon/spring-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100;
+    -fx-border-color: #4e4557;
+    -fx-border-style: solid;
+    -fx-border-width: 3px
+}
+
+#summer {
+    -fx-background-image: url("../../../../img/look_book-icon/summer-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100;
+    -fx-border-color: #4e4557;
+    -fx-border-style: solid;
+    -fx-border-width: 3px
+}
+
+#autumn {
+    -fx-background-image: url("../../../../img/look_book-icon/autumn-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100;
+    -fx-border-color: #4e4557;
+    -fx-border-style: solid;
+    -fx-border-width: 3px
+}
+
+#winter {
+    -fx-background-image: url("../../../../img/look_book-icon/winter-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100;
+    -fx-border-color: #4e4557;
+    -fx-border-style: solid;
+    -fx-border-width: 3px
+}
+
+#home_btn {
+    -fx-background-image: url("../../../../img/look_book-icon/home-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 20;
+    -fx-border-color: #fff;
+    -fx-background-color: #fff;
+}
+
+#enroll_btn {
+    -fx-background-image: url("../../../../img/look_book-icon/plus-icon.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 24;
+    -fx-border-color: #fff;
+    -fx-background-color: #fff;
+}
+
+#information{
+    -fx-font-family: "esamanru Medium";
+    -fx-font-weight: bold;
+}
+
+#userBox{
+    -fx-background-color:  #DEDAE3;
+    -fx-padding: 10px;
+}
+
+#userId{
+    -fx-font-fill: #4e4557;
+}
